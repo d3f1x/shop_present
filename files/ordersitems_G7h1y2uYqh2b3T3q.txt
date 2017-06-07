@@ -1,0 +1,1 @@
+<tr><td>111213</td><td>﻿Надувной гамак Ламзак</td><td>2</td><td>3180 руб.</td></tr><br><tr><td>111214</td><td>Fidget Cube - антистрессовый кубик</td><td>1</td><td>1050 руб.</td></tr><br><tr><td style="background:#e6e6fa;"><b>Итого к оплате: </b></td><td style="background:#e6e6fa; text-align: right; padding-right:40px;" colspan="4"><b>4230 руб.</b></td></tr>

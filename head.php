@@ -61,4 +61,18 @@
 		});
 		});
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('.spoiler-body4').hide();
+		$('.spoiler-title4').click(function(){
+			$(this).toggleClass('opened').toggleClass('closed').next().slideToggle();
+			if($(this).hasClass('opened')) {
+				$(this).html('Скрыть добавление рекламного баннера');
+			}
+			else {
+				$(this).html('Добавить новый адрес магазина');
+			}
+		});
+		});
+	</script>
    </head>

@@ -60,7 +60,14 @@
 							<input type="text" size="40" name="bannersrc" required></p>
 							<input style="height: 50px; width: 200px; font-size: 22px; cursor:pointer;"  type="submit" value="Добавить баннер">
 							</form>
-							</p></div>';	
+							</p></div>';
+
+							echo '<br><button style="height: 75px; width: 300px; font-size: 22px; margin-top: 15px; background:#00adab; color:#fff; cursor:pointer;"  class="spoiler-title4">Добавить адрес магазина</button> <div id="basket" class="spoiler-body4" style="font-size:24px;">
+							<p><b>Ввведите адрес нового магазина:</b><br>
+							<form action="add_adress.php" method="POST" >
+							<input type="text" size="40" name="new_adress" required></p>
+							<input style="height: 50px; width: 200px; font-size: 22px; cursor:pointer;"  type="submit" value="Добавить">
+							</form></p></div>';
 							
 						}
 						else {

@@ -29,12 +29,19 @@
                               <form action="confirmordering.php" method="get">
                                  <input type="text" size="30" name="fullname" required placeholder="Ф.И.О."><br><br>
                                  <input type="text" size="30" name="phonenumber" required placeholder="Номер телефона"><br><br>
-                                 <input type="text" size="30" name="email" required placeholder="E-mail"><br><br>
-								 <select name="address">
-								 <option selected value="Не выбрано">Место получения (Самовывоз из магазина)</option>
-								 <option value="Магазин на ул.Есенина 12">Магазин на ул.Есенина 12</option>
-								 <option value="Магазин на ул.Плановая 38">Магазин на ул.Плановая 38</option>
-								 </select><br><br>
+                                 <input type="text" size="30" name="email" required placeholder="E-mail"><br><br>';
+								 
+							
+								 $new_adress=file('files/all_adresses.txt', FILE_IGNORE_NEW_LINES); 
+							
+								echo '<p><select name="address">
+								<option selected value="Не выбрано">Место получения (Самовывоз из магазина)</option>';
+								for ($i=0; $i<count($new_adress); $i++)
+									{
+										echo '<option VALUE="', $new_adress[$i] ,'">', $new_adress[$i] ,'</option>';
+									}
+								echo '</select><br><br>
+								 
                                  </td>
                                  </tr>
                                  <tr>
